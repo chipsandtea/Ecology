@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */; };
+		9DC8F3FE1A83E60D00A20F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F3FD1A83E60D00A20F38 /* ViewController.swift */; };
+		9DC8F4011A83E60D00A20F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F3FF1A83E60D00A20F38 /* Main.storyboard */; };
+		9DC8F4031A83E60D00A20F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4021A83E60D00A20F38 /* Images.xcassets */; };
+		9DC8F4061A83E60D00A20F38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */; };
+		9DC8F4121A83E60D00A20F38 /* EcologyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F4111A83E60D00A20F38 /* EcologyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DC8F40C1A83E60D00A20F38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DC8F3EE1A83E60D00A20F38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DC8F3F51A83E60D00A20F38;
+			remoteInfo = Ecology;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DC8F3F61A83E60D00A20F38 /* Ecology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC8F3FA1A83E60D00A20F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DC8F3FD1A83E60D00A20F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9DC8F4001A83E60D00A20F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DC8F4021A83E60D00A20F38 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9DC8F4051A83E60D00A20F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9DC8F40B1A83E60D00A20F38 /* EcologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DC8F4101A83E60D00A20F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DC8F4111A83E60D00A20F38 /* EcologyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcologyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DC8F3F31A83E60D00A20F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC8F4081A83E60D00A20F38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DC8F3ED1A83E60D00A20F38 = {
+			isa = PBXGroup;
+			children = (
+				9DC8F3F81A83E60D00A20F38 /* Ecology */,
+				9DC8F40E1A83E60D00A20F38 /* EcologyTests */,
+				9DC8F3F71A83E60D00A20F38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DC8F3F71A83E60D00A20F38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8F3F61A83E60D00A20F38 /* Ecology.app */,
+				9DC8F40B1A83E60D00A20F38 /* EcologyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DC8F3F81A83E60D00A20F38 /* Ecology */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */,
+				9DC8F3FD1A83E60D00A20F38 /* ViewController.swift */,
+				9DC8F3FF1A83E60D00A20F38 /* Main.storyboard */,
+				9DC8F4021A83E60D00A20F38 /* Images.xcassets */,
+				9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */,
+				9DC8F3F91A83E60D00A20F38 /* Supporting Files */,
+			);
+			path = Ecology;
+			sourceTree = "<group>";
+		};
+		9DC8F3F91A83E60D00A20F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8F3FA1A83E60D00A20F38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DC8F40E1A83E60D00A20F38 /* EcologyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8F4111A83E60D00A20F38 /* EcologyTests.swift */,
+				9DC8F40F1A83E60D00A20F38 /* Supporting Files */,
+			);
+			path = EcologyTests;
+			sourceTree = "<group>";
+		};
+		9DC8F40F1A83E60D00A20F38 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DC8F4101A83E60D00A20F38 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DC8F3F51A83E60D00A20F38 /* Ecology */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC8F4151A83E60D00A20F38 /* Build configuration list for PBXNativeTarget "Ecology" */;
+			buildPhases = (
+				9DC8F3F21A83E60D00A20F38 /* Sources */,
+				9DC8F3F31A83E60D00A20F38 /* Frameworks */,
+				9DC8F3F41A83E60D00A20F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ecology;
+			productName = Ecology;
+			productReference = 9DC8F3F61A83E60D00A20F38 /* Ecology.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DC8F40A1A83E60D00A20F38 /* EcologyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DC8F4181A83E60D00A20F38 /* Build configuration list for PBXNativeTarget "EcologyTests" */;
+			buildPhases = (
+				9DC8F4071A83E60D00A20F38 /* Sources */,
+				9DC8F4081A83E60D00A20F38 /* Frameworks */,
+				9DC8F4091A83E60D00A20F38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DC8F40D1A83E60D00A20F38 /* PBXTargetDependency */,
+			);
+			name = EcologyTests;
+			productName = EcologyTests;
+			productReference = 9DC8F40B1A83E60D00A20F38 /* EcologyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DC8F3EE1A83E60D00A20F38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Chips&Tea";
+				TargetAttributes = {
+					9DC8F3F51A83E60D00A20F38 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					9DC8F40A1A83E60D00A20F38 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9DC8F3F51A83E60D00A20F38;
+					};
+				};
+			};
+			buildConfigurationList = 9DC8F3F11A83E60D00A20F38 /* Build configuration list for PBXProject "Ecology" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DC8F3ED1A83E60D00A20F38;
+			productRefGroup = 9DC8F3F71A83E60D00A20F38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DC8F3F51A83E60D00A20F38 /* Ecology */,
+				9DC8F40A1A83E60D00A20F38 /* EcologyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DC8F3F41A83E60D00A20F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC8F4011A83E60D00A20F38 /* Main.storyboard in Resources */,
+				9DC8F4061A83E60D00A20F38 /* LaunchScreen.xib in Resources */,
+				9DC8F4031A83E60D00A20F38 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC8F4091A83E60D00A20F38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DC8F3F21A83E60D00A20F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC8F3FE1A83E60D00A20F38 /* ViewController.swift in Sources */,
+				9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DC8F4071A83E60D00A20F38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC8F4121A83E60D00A20F38 /* EcologyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DC8F40D1A83E60D00A20F38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DC8F3F51A83E60D00A20F38 /* Ecology */;
+			targetProxy = 9DC8F40C1A83E60D00A20F38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DC8F3FF1A83E60D00A20F38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DC8F4001A83E60D00A20F38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DC8F4051A83E60D00A20F38 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DC8F4131A83E60D00A20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9DC8F4141A83E60D00A20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DC8F4161A83E60D00A20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ecology/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9DC8F4171A83E60D00A20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Ecology/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9DC8F4191A83E60D00A20F38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EcologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecology.app/Ecology";
+			};
+			name = Debug;
+		};
+		9DC8F41A1A83E60D00A20F38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EcologyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ecology.app/Ecology";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DC8F3F11A83E60D00A20F38 /* Build configuration list for PBXProject "Ecology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC8F4131A83E60D00A20F38 /* Debug */,
+				9DC8F4141A83E60D00A20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DC8F4151A83E60D00A20F38 /* Build configuration list for PBXNativeTarget "Ecology" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC8F4161A83E60D00A20F38 /* Debug */,
+				9DC8F4171A83E60D00A20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DC8F4181A83E60D00A20F38 /* Build configuration list for PBXNativeTarget "EcologyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DC8F4191A83E60D00A20F38 /* Debug */,
+				9DC8F41A1A83E60D00A20F38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DC8F3EE1A83E60D00A20F38 /* Project object */;
+}
