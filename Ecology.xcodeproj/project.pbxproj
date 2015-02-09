@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A742BB51A882C4E001EF898 /* dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A742BB41A882C4E001EF898 /* dictionary.m */; };
 		9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */; };
 		9DC8F4031A83E60D00A20F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4021A83E60D00A20F38 /* Images.xcassets */; };
 		9DC8F4061A83E60D00A20F38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */; };
@@ -28,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A742BB21A882C25001EF898 /* dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
+		4A742BB31A882C4D001EF898 /* Ecology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ecology-Bridging-Header.h"; sourceTree = "<group>"; };
+		4A742BB41A882C4E001EF898 /* dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dictionary.m; sourceTree = "<group>"; };
 		9DC8F3F61A83E60D00A20F38 /* Ecology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC8F3FA1A83E60D00A20F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +93,9 @@
 				9DC8F4021A83E60D00A20F38 /* Images.xcassets */,
 				9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */,
 				9DC8F3F91A83E60D00A20F38 /* Supporting Files */,
+				4A742BB21A882C25001EF898 /* dictionary.h */,
+				4A742BB41A882C4E001EF898 /* dictionary.m */,
+				4A742BB31A882C4D001EF898 /* Ecology-Bridging-Header.h */,
 			);
 			path = Ecology;
 			sourceTree = "<group>";
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A742BB51A882C4E001EF898 /* dictionary.m in Sources */,
 				9DC8F4201A83E65000A20F38 /* ResponsiveTextFieldViewController.swift in Sources */,
 				9DC8F41E1A83E64200A20F38 /* ViewController.swift in Sources */,
 				9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */,
@@ -338,9 +346,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Ecology/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ecology/Ecology-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,9 +359,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = Ecology/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ecology/Ecology-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +420,7 @@
 				9DC8F4171A83E60D00A20F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9DC8F4181A83E60D00A20F38 /* Build configuration list for PBXNativeTarget "EcologyTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +429,7 @@
 				9DC8F41A1A83E60D00A20F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
