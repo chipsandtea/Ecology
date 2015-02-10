@@ -32,27 +32,26 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         phValue.text = temp
     }
     
-//    @IBAction func nextButtonHit3(sender: UIButton) {
-//        gatherAllData3()
-//    }
-//    
-//    func gatherAllData3(){
-//        var dDictionary = [String : String]()
-//        dDictionary["seawater_ph"] = phValue.text
-//        dDictionary["otter_count"] = otterCount.text
-//        dDictionary["emeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
-//
-//        dDictionary["emeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
-//
-//        var myNewDictArray: [[String:String]] = []
-//        myNewDictArray.append(dDictionary)
-//        sharedData().setObject(myNewDictArray, forKey: "ecology")
-//        //println(sharedData())
-//        
-//        bData().setObject(sharedData(), forKey: "group_data")
-//        cData().setObject(bData(), forKey: "data")
-//        println(cData())
-//    }
+    func gatherAllData(){
+        var aDictionary = [String : String]()
+        aDictionary["seawater_ph"] = phValue.text
+        aDictionary["otter_count"] = otterCount.text
+        aDictionary["emeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
+        aDictionary["emeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
+        
+        var myNewDictArray: [[String:String]] = []
+        
+        myNewDictArray.append(aDictionary)
+        sharedData().setObject(myNewDictArray, forKey: "ecology")
+        
+        //bData().setObject(sharedData(), forKey: "group_data")
+        //cData().setObject(bData(), forKey: "data")
+    }
+    
+    @IBAction func saveData(sender: AnyObject) {
+        gatherAllData()
+        println(sharedData())
+    }
     
 /*
     // MARK: - Navigation
