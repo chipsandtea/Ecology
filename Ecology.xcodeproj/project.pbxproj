@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4A742BB51A882C4E001EF898 /* dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A742BB41A882C4E001EF898 /* dictionary.m */; };
+		9D0AD2C91A8AF30300660F48 /* SubmitDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AD2C81A8AF30300660F48 /* SubmitDataViewController.swift */; };
+		9D0AD2CB1A8AF31200660F48 /* GroupNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AD2CA1A8AF31200660F48 /* GroupNameViewController.swift */; };
+		9D0AD2CD1A8AF31900660F48 /* SchoolSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0AD2CC1A8AF31900660F48 /* SchoolSelectionViewController.swift */; };
 		9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */; };
 		9DC8F4031A83E60D00A20F38 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4021A83E60D00A20F38 /* Images.xcassets */; };
 		9DC8F4061A83E60D00A20F38 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DC8F4041A83E60D00A20F38 /* LaunchScreen.xib */; };
@@ -32,6 +35,9 @@
 		4A742BB21A882C25001EF898 /* dictionary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dictionary.h; sourceTree = "<group>"; };
 		4A742BB31A882C4D001EF898 /* Ecology-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ecology-Bridging-Header.h"; sourceTree = "<group>"; };
 		4A742BB41A882C4E001EF898 /* dictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dictionary.m; sourceTree = "<group>"; };
+		9D0AD2C81A8AF30300660F48 /* SubmitDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SubmitDataViewController.swift; path = ../SubmitDataViewController.swift; sourceTree = "<group>"; };
+		9D0AD2CA1A8AF31200660F48 /* GroupNameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupNameViewController.swift; sourceTree = "<group>"; };
+		9D0AD2CC1A8AF31900660F48 /* SchoolSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolSelectionViewController.swift; sourceTree = "<group>"; };
 		9DC8F3F61A83E60D00A20F38 /* Ecology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC8F3FA1A83E60D00A20F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DC8F3FB1A83E60D00A20F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +91,7 @@
 		9DC8F3F81A83E60D00A20F38 /* Ecology */ = {
 			isa = PBXGroup;
 			children = (
+				9D0AD2C81A8AF30300660F48 /* SubmitDataViewController.swift */,
 				9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */,
 				9DC8F41F1A83E65000A20F38 /* ResponsiveTextFieldViewController.swift */,
 				9DC8F41D1A83E64200A20F38 /* ViewController.swift */,
@@ -96,6 +103,8 @@
 				4A742BB21A882C25001EF898 /* dictionary.h */,
 				4A742BB41A882C4E001EF898 /* dictionary.m */,
 				4A742BB31A882C4D001EF898 /* Ecology-Bridging-Header.h */,
+				9D0AD2CA1A8AF31200660F48 /* GroupNameViewController.swift */,
+				9D0AD2CC1A8AF31900660F48 /* SchoolSelectionViewController.swift */,
 			);
 			path = Ecology;
 			sourceTree = "<group>";
@@ -225,11 +234,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0AD2C91A8AF30300660F48 /* SubmitDataViewController.swift in Sources */,
 				4A742BB51A882C4E001EF898 /* dictionary.m in Sources */,
 				9DC8F4201A83E65000A20F38 /* ResponsiveTextFieldViewController.swift in Sources */,
+				9D0AD2CD1A8AF31900660F48 /* SchoolSelectionViewController.swift in Sources */,
 				9DC8F41E1A83E64200A20F38 /* ViewController.swift in Sources */,
 				9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */,
 				9DC8F4221A83E6F500A20F38 /* EcologyViewController.swift in Sources */,
+				9D0AD2CB1A8AF31200660F48 /* GroupNameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

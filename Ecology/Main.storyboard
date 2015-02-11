@@ -7,7 +7,7 @@
         <!--Dashboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GroupNameViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="94" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="1792"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit Data View Controller-->
         <scene sceneID="aVN-Ra-w4m">
             <objects>
-                <viewController id="jbO-7M-Qap" sceneMemberID="viewController">
+                <viewController id="jbO-7M-Qap" customClass="SubmitDataViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvC-Or-9ss">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +161,7 @@
         <!--Sign In-->
         <scene sceneID="0qm-hY-1qM">
             <objects>
-                <viewController id="dvb-r1-wRf" customClass="ViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dvb-r1-wRf" customClass="SchoolSelectionViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CpV-RG-o1g">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,9 +202,6 @@
                     <navigationItem key="navigationItem" title="Sign In" id="W33-8t-ZVI"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="firstContinueButton" destination="aTx-33-hb4" id="Cyd-gO-Hac"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cp-tc-BOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -374,7 +371,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8Tl-ar-IFa"/>
-        <segue reference="rP0-NE-9Ji"/>
+        <segue reference="tA9-7v-070"/>
+        <segue reference="64y-wF-jS9"/>
     </inferredMetricsTieBreakers>
 </document>
