@@ -44,13 +44,13 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         myNewDictArray.append(aDictionary)
         sharedData().setObject(myNewDictArray, forKey: "ecology")
         
-        //bData().setObject(sharedData(), forKey: "group_data")
-        //cData().setObject(bData(), forKey: "data")
+        bData().setObject(sharedData(), forKey: "group_data")
+        cData().setObject(bData(), forKey: "data")
     }
     
     @IBAction func saveData(sender: AnyObject) {
         gatherAllData()
-        println(sharedData())
+        println(cData())
     }
     
 /*
