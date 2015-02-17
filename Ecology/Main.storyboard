@@ -7,7 +7,7 @@
         <!--Dashboard-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GroupNameViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="94" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,9 @@
                             <pickerView contentMode="scaleToFill" id="SSR-3v-msN">
                                 <rect key="frame" x="0.0" y="296" width="1024" height="216"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="deZ-37-qiK"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.99215692281723022" green="0.9960784912109375" blue="0.99215692281723022" alpha="1" colorSpace="deviceRGB"/>
@@ -54,6 +57,9 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="groupPicker" destination="SSR-3v-msN" id="aKY-Se-UHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="1792"/>
         </scene>
-        <!--View Controller-->
+        <!--Submit Data View Controller-->
         <scene sceneID="aVN-Ra-w4m">
             <objects>
-                <viewController id="jbO-7M-Qap" sceneMemberID="viewController">
+                <viewController id="jbO-7M-Qap" customClass="SubmitDataViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FvC-Or-9ss">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -161,7 +167,7 @@
         <!--Sign In-->
         <scene sceneID="0qm-hY-1qM">
             <objects>
-                <viewController id="dvb-r1-wRf" customClass="ViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dvb-r1-wRf" customClass="SchoolSelectionViewController" customModule="Ecology" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CpV-RG-o1g">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,9 +208,6 @@
                     <navigationItem key="navigationItem" title="Sign In" id="W33-8t-ZVI"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-                    <connections>
-                        <outlet property="firstContinueButton" destination="aTx-33-hb4" id="Cyd-gO-Hac"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8cp-tc-BOE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -282,6 +285,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plankton_bg" id="kCK-Av-hgz">
+                                <rect key="frame" x="0.0" y="0.0" width="1032" height="777"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TM7-u2-0H4">
                                 <rect key="frame" x="458" y="641" width="109" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -291,7 +298,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="nextButtonHit3:" destination="8BD-1k-moO" eventType="touchUpInside" id="lYA-uQ-kil"/>
                                     <segue destination="jbO-7M-Qap" kind="push" id="dMs-f7-aQe"/>
                                 </connections>
                             </button>
@@ -344,10 +350,6 @@
                                     <action selector="saveData:" destination="8BD-1k-moO" eventType="touchUpInside" id="B0b-NF-ybj"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plankton_bg" id="kCK-Av-hgz">
-                                <rect key="frame" x="0.0" y="0.0" width="1032" height="777"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -375,7 +377,7 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="8Tl-ar-IFa"/>
-        <segue reference="rP0-NE-9Ji"/>
+        <segue reference="tA9-7v-070"/>
+        <segue reference="64y-wF-jS9"/>
     </inferredMetricsTieBreakers>
 </document>
