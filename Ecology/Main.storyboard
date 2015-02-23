@@ -96,7 +96,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="8Tl-ar-IFa"/>
+                                    <action selector="hitGroupSelect:" destination="wGk-YH-7RE" eventType="touchUpInside" id="A7P-Ch-3z8"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sPj-RR-iRy">
@@ -107,7 +107,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dvb-r1-wRf" kind="push" id="rP0-NE-9Ji"/>
+                                    <action selector="hitSchoolSelect:" destination="wGk-YH-7RE" eventType="touchUpInside" id="zTb-Os-s7v"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -387,8 +387,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="tA9-7v-070"/>
-        <segue reference="64y-wF-jS9"/>
-    </inferredMetricsTieBreakers>
 </document>

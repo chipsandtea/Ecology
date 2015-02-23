@@ -134,7 +134,7 @@ class GroupNameViewController: UIViewController,UIPickerViewDelegate {
         super.viewDidLoad()
         groupPicker.delegate = self
         selectedGroup = groupNames[0]
-
+        navigationController?.setNavigationBarHidden(false, animated: true)
         // Do any additional setup after loading the view.
     }
 
@@ -159,6 +159,11 @@ class GroupNameViewController: UIViewController,UIPickerViewDelegate {
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         selectedGroup = groupNames[row]
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(false);
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

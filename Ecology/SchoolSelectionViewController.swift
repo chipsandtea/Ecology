@@ -11,6 +11,7 @@ import UIKit
 class SchoolSelectionViewController: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: true)
 
         // Do any additional setup after loading the view.
     }
@@ -18,6 +19,11 @@ class SchoolSelectionViewController: UIViewController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(false);
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
