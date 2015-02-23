@@ -168,6 +168,4 @@ class GroupNameViewController: UIViewController,UIPickerViewDelegate {
         DestVC.SchoolName = school
         
     }
-    
-    
 }
