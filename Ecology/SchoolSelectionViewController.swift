@@ -19,5 +19,10 @@ class SchoolSelectionViewController: UIViewController{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestVC: GroupNameViewController = segue.destinationViewController as GroupNameViewController
+        DestVC.school = "Placeholder School"
+    }
 }
 

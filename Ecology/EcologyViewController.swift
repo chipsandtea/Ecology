@@ -5,19 +5,26 @@
 //  Created by Arjun Gopisetty on 1/11/15.
 //  Copyright (c) 2015 HackUCSC2015Team. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
 class EcologyViewController: ResponsiveTextFieldViewController {
     
+
+    @IBOutlet var schoolGroupLabel: UILabel!
     @IBOutlet var phSlider: UISlider!
     @IBOutlet var otterCount: UITextField!
     @IBOutlet var phValue: UITextField!
+    var GroupName = String()
+    var SchoolName = String()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         phValue.text = "7.00"
+        //print(GroupName + "hi")
+        schoolGroupLabel.text = "School: " + SchoolName + "  Group: " + GroupName
+        
 
         // Do any additional setup after loading the view.
     }
@@ -53,14 +60,10 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         println(cData())
     }
     
-/*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        var DestVC: SubmitDataViewController = segue.destinationViewController as SubmitDataViewController
+        DestVC.groupName = GroupName
     }
-    */
+
 
 }
