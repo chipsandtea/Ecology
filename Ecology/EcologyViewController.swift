@@ -17,7 +17,10 @@ class EcologyViewController: ResponsiveTextFieldViewController {
     @IBOutlet var phValue: UITextField!
     var GroupName = String()
     var SchoolName = String()
-
+    var otterButton = 0
+    @IBAction func otterButton(sender: AnyObject) {
+        otterButton++
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,26 +41,35 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         let temp = NSString(format: "%.2f", sender.value)
         phValue.text = temp
     }
-    
     func gatherAllData(){
         var aDictionary = [String : String]()
+        var bDictionary = [String : String]()
+        var cDictionary = [String : String]()
+        var dDictionary = [String : String]()
         aDictionary["seawater_ph"] = phValue.text
         aDictionary["otter_count"] = otterCount.text
         aDictionary["emeasurement_time"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .NoStyle, timeStyle: .ShortStyle)
         aDictionary["emeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
-        
-        var myNewDictArray: [[String:String]] = []
-        
-        myNewDictArray.append(aDictionary)
-        sharedData().setObject(myNewDictArray, forKey: "ecology")
-        
-        bData().setObject(sharedData(), forKey: "group_data")
-        cData().setObject(bData(), forKey: "data")
+        bDictionary["type"] = "ecology"
+        cDictionary["group"] = GroupName
+        dDictionary["id"] = "some id"
+        //var myNewDictArray: [[String:String]] = []
+        //myNewDictArray.append(aDictionary)
+        //myNewDictArray.append(bDictionary)
+        //myNewDictArray.append(cDictionary)
+        sharedData().setObject(aDictionary, forKey: "data")
+        sharedData().addEntriesFromDictionary(bDictionary)
+        sharedData().addEntriesFromDictionary(cDictionary)
+        sharedData().addEntriesFromDictionary(dDictionary)
+
+        //bData().setObject(sharedData(), forKey: "group_data")
+        //cData().setObject(bData(), forKey: "data")
     }
     
+   
     @IBAction func saveData(sender: AnyObject) {
         gatherAllData()
-        println(cData())
+        println(sharedData())
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
