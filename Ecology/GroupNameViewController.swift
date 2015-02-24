@@ -9,19 +9,8 @@
 import UIKit
 
 class GroupNameViewController: UIViewController,UIPickerViewDelegate {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBOutlet var groupPicker: UIPickerView!
     
-    var selectedGroup: UITextField!
     var groupNames=["Blue Whale",
         "Grey Whale",
         "Minke Whale",
@@ -138,9 +127,23 @@ class GroupNameViewController: UIViewController,UIPickerViewDelegate {
         "Great Blue Heron",
         "Night Heron"
     ]
+    var selectedGroup = String()
+    var school = String()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        groupPicker.delegate = self
+        selectedGroup = groupNames[0]
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
     
     
-    @IBOutlet var groupPicker: UIPickerView!
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView!) -> Int{
             return 1
@@ -154,5 +157,20 @@ class GroupNameViewController: UIViewController,UIPickerViewDelegate {
             return groupNames[row]
     }
     
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        selectedGroup = groupNames[row]
+    }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(false);
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        var DestVC: EcologyViewController = segue.destinationViewController as EcologyViewController
+        
+        DestVC.GroupName = selectedGroup
+        DestVC.SchoolName = school
+        
+    }
 }

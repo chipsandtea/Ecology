@@ -10,8 +10,11 @@ import UIKit
 
 class SubmitDataViewController: UIViewController {
 
+    @IBOutlet var bannerLabel: UILabel!
+    var groupName = String()
     override func viewDidLoad() {
         super.viewDidLoad()
+        bannerLabel.text = "Submit Data for: " + groupName + " ?"
 
         // Do any additional setup after loading the view.
     }
