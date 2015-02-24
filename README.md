@@ -1,3 +1,3 @@
 # Ecology
 
-The ecology app created for O'Niell Sea Oddessy.
+The ecology app created for O'Neill Sea Odyssey.
