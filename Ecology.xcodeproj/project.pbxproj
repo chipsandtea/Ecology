@@ -20,6 +20,7 @@
 		9DC8F41E1A83E64200A20F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F41D1A83E64200A20F38 /* ViewController.swift */; };
 		9DC8F4201A83E65000A20F38 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F41F1A83E65000A20F38 /* ResponsiveTextFieldViewController.swift */; };
 		9DC8F4221A83E6F500A20F38 /* EcologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */; };
+		F9A7BF741A9D699000F01BDC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A7BF731A9D699000F01BDC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		9DC8F41D1A83E64200A20F38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DC8F41F1A83E65000A20F38 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EcologyViewController.swift; sourceTree = "<group>"; };
+		F9A7BF731A9D699000F01BDC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A7BF741A9D699000F01BDC /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +78,7 @@
 		9DC8F3ED1A83E60D00A20F38 = {
 			isa = PBXGroup;
 			children = (
+				F9A7BF731A9D699000F01BDC /* CoreLocation.framework */,
 				9DC8F3F81A83E60D00A20F38 /* Ecology */,
 				9DC8F40E1A83E60D00A20F38 /* EcologyTests */,
 				9DC8F3F71A83E60D00A20F38 /* Products */,
