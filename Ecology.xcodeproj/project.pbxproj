@@ -20,6 +20,7 @@
 		9DC8F41E1A83E64200A20F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F41D1A83E64200A20F38 /* ViewController.swift */; };
 		9DC8F4201A83E65000A20F38 /* ResponsiveTextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F41F1A83E65000A20F38 /* ResponsiveTextFieldViewController.swift */; };
 		9DC8F4221A83E6F500A20F38 /* EcologyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */; };
+		B8413B901A9FE45A008F5DE7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8413B8F1A9FE45A008F5DE7 /* SwiftyJSON.swift */; };
 		F9A7BF741A9D699000F01BDC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9A7BF731A9D699000F01BDC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		9DC8F41D1A83E64200A20F38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DC8F41F1A83E65000A20F38 /* ResponsiveTextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsiveTextFieldViewController.swift; sourceTree = "<group>"; };
 		9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EcologyViewController.swift; sourceTree = "<group>"; };
+		B8413B8F1A9FE45A008F5DE7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		F9A7BF731A9D699000F01BDC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 		9DC8F3F81A83E60D00A20F38 /* Ecology */ = {
 			isa = PBXGroup;
 			children = (
+				B8413B8F1A9FE45A008F5DE7 /* SwiftyJSON.swift */,
 				9D0AD2C81A8AF30300660F48 /* SubmitDataViewController.swift */,
 				9DC8F4211A83E6F500A20F38 /* EcologyViewController.swift */,
 				9DA065361A9B902600AD4A9D /* CompletedViewController.swift */,
@@ -244,6 +247,7 @@
 				9D0AD2C91A8AF30300660F48 /* SubmitDataViewController.swift in Sources */,
 				4A742BB51A882C4E001EF898 /* dictionary.m in Sources */,
 				9DC8F4201A83E65000A20F38 /* ResponsiveTextFieldViewController.swift in Sources */,
+				B8413B901A9FE45A008F5DE7 /* SwiftyJSON.swift in Sources */,
 				9D0AD2CD1A8AF31900660F48 /* SchoolSelectionViewController.swift in Sources */,
 				9DC8F41E1A83E64200A20F38 /* ViewController.swift in Sources */,
 				9DC8F3FC1A83E60D00A20F38 /* AppDelegate.swift in Sources */,

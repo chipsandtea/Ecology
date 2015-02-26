@@ -37,6 +37,9 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         // Dispose of any resources that can be recreated.
     }
     
+   @IBAction func saveDataDict(sender: AnyObject) {
+      self.gatherAllData()
+   }
     @IBAction func sliderSlid(sender: UISlider) {
         let temp = NSString(format: "%.2f", sender.value)
         phValue.text = temp
@@ -52,7 +55,7 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         aDictionary["emeasurement_date"] = NSDateFormatter.localizedStringFromDate(NSDate(), dateStyle: .ShortStyle, timeStyle: .NoStyle)
         bDictionary["type"] = "ecology"
         cDictionary["group"] = GroupName
-        dDictionary["id"] = "some id"
+        dDictionary["id"] = (sharedData().objectForKey("school_id") as String)
         //var myNewDictArray: [[String:String]] = []
         //myNewDictArray.append(aDictionary)
         //myNewDictArray.append(bDictionary)
