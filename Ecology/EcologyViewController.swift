@@ -26,7 +26,7 @@ class EcologyViewController: ResponsiveTextFieldViewController {
         super.viewDidLoad()
         phValue.text = "7.00"
         //print(GroupName + "hi")
-        schoolGroupLabel.text = "School: " + SchoolName + "  Group: " + GroupName
+        schoolGroupLabel.text = "School: " + SchoolName + " || Group: " + GroupName
         
 
         // Do any additional setup after loading the view.
