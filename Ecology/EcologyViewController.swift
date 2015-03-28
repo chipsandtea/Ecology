@@ -18,18 +18,16 @@ class EcologyViewController: ResponsiveTextFieldViewController {
     var GroupName = String()
     var SchoolName = String()
     var otterButton = 0
-    @IBAction func otterButton(sender: AnyObject) {
-        otterButton++
-    }
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         phValue.text = "7.00"
         //print(GroupName + "hi")
         schoolGroupLabel.text = "School: " + SchoolName + " || Group: " + GroupName
+        otterCount.keyboardType = UIKeyboardType.NumberPad
+        phValue.keyboardType = UIKeyboardType.NumberPad
         
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
